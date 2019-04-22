@@ -29,15 +29,17 @@ function afterConnection() {
       .prompt([
         {
           name: "choice",
-          type: "rawlist",
+          type: "list",
           choices: function() {
             var choiceArray = [];
             for (var i = 0; i < results.length; i++) {
-              choiceArray.push(results[i].product_name);
+                // displays the items from db
+                // .toFixed(2) forces the price to display 2 decimal places
+              choiceArray.push(results[i].item_id +" "+ results[i].product_name +" $"+ results[i].price.toFixed(2));
             }
             return choiceArray;
           },
-          message: "What auction would you like to place a bid in?"
+          message: "What item would you like to buy?"
         },
         {
           name: "bid",
