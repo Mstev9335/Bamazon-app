@@ -10,6 +10,8 @@
 
 *  If there is not enough stock for the item, an error message is printed and the order is declined
 
+*  If there is enough stock for the item, then the user's order is fulfilled
+
 ## Technologies used:
 * HTML
 * CSS
