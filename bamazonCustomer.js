@@ -50,6 +50,7 @@ function afterConnection() {
       ])
       .then(function(answer) {
         // when finished prompting, insert a new item into the db with that info
+        // get id from the user choice
         let id = answer.choice[0];
         let amount = answer.amount;
         
