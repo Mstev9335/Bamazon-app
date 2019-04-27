@@ -35,7 +35,8 @@ function afterConnection() {
             for (var i = 0; i < results.length; i++) {
                 // displays the items from db
                 // .toFixed(2) forces the price to display 2 decimal places
-              choiceArray.push(results[i].item_id +" "+ results[i].product_name +" $"+ results[i].price.toFixed(2));
+              choiceArray.push(results[i].item_id +" "+ results[i].product_name +" $"+ results[i].price.toFixed(2) +
+             " "+ results[i].stock_quantity);
             }
             return choiceArray;
           },
@@ -48,7 +49,25 @@ function afterConnection() {
         }
       ])
       .then(function(answer) {
-   
+        console.log(answer.choice);
+        // when finished prompting, insert a new item into the db with that info
+        // connection.query(
+        //   "UPDATE products SET ? WHERE ?",
+        //   [
+        //     {
+        //       stock_quantity: answer.amount
+        //     },
+        //     {
+        //       item_id: answer.choice
+        //     }
+        //   ],
+        //   function(err) {
+        //     if (err) throw err;
+        //     console.log(res.affectedRows + " products updated!\n");
+         
+        //     afterConnection();
+        //   }
+        // );
       });
  
       connection.end();
