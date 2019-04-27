@@ -49,25 +49,30 @@ function afterConnection() {
         }
       ])
       .then(function(answer) {
-        console.log(answer.choice);
         // when finished prompting, insert a new item into the db with that info
-        // connection.query(
-        //   "UPDATE products SET ? WHERE ?",
-        //   [
-        //     {
-        //       stock_quantity: answer.amount
-        //     },
-        //     {
-        //       item_id: answer.choice
-        //     }
-        //   ],
-        //   function(err) {
-        //     if (err) throw err;
-        //     console.log(res.affectedRows + " products updated!\n");
-         
-        //     afterConnection();
-        //   }
-        // );
+        let id = answer.choice[0];
+        let amount = answer.amount;
+        
+        console.log(id);
+        console.log(amount);
+
+        connection.query(
+          "UPDATE products SET ? WHERE ?",
+          [
+            {
+              stock_quantity: amount
+            },
+            {
+              item_id: id
+            }
+          ],
+          function(err) {
+            if (err) throw err;
+            console.log("stock updated!");
+            // re-prompt the user for if they want to bid or post
+            afterConnection();
+          }
+        );
       });
  
       connection.end();
