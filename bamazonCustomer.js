@@ -47,6 +47,9 @@ function afterConnection() {
           message: "How many would you like to buy?"
         }
       ])
+      .then(function(answer) {
+   
+      });
  
       connection.end();
     });
