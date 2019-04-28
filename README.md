@@ -23,14 +23,14 @@
 ## App starts
 ![concert-this functionality](/screenshots/bamazon1.png)
 
-### The user selects the item he/she wishes to purchase and is then prompted for the number of that item he/she wishes to purchase.
+### The user selects the item he/she wishes to purchase and is then prompted for the number of that item he/she wishes to purchase
 ![concert-this functionality](/screenshots/bamazon2.png)
 
-## App starts
+### The stock of the item is updated in the database and the items are displayed again
 ![concert-this functionality](/screenshots/bamazon3.png)
 
-## App starts
+### The user can put in an order for more than the number of stock
 ![concert-this functionality](/screenshots/bamazon4.png)
 
-## App starts
+### If that happens, a message stating that there is insufficient stock is displayed and the order is cancelled so the stock is not changed
 ![concert-this functionality](/screenshots/bamazon5.png)
