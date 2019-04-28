@@ -22,3 +22,15 @@
 
 ## App starts
 ![concert-this functionality](/screenshots/bamazon1.png)
+
+### The user selects the item he/she wishes to purchase and is then prompted for the number of that item he/she wishes to purchase.
+![concert-this functionality](/screenshots/bamazon2.png)
+
+## App starts
+![concert-this functionality](/screenshots/bamazon3.png)
+
+## App starts
+![concert-this functionality](/screenshots/bamazon4.png)
+
+## App starts
+![concert-this functionality](/screenshots/bamazon5.png)
