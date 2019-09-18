@@ -20,6 +20,17 @@
 * NPM
 * Inquirer
 
+## How to install:
+1. You first need to clone this repo onto your local computer
+2. Once this is done install the necessary dependencies by runnning this command in the root directory:
+```javascript
+$ npm install
+```
+3. You can then run the app by typing the following command into the terminal:
+```javascript
+$ node bamazonCustomer.js
+```
+
 ## App starts
 ![concert-this functionality](/screenshots/bamazon1.png)
 
