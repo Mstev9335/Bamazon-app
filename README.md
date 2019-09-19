@@ -18,7 +18,7 @@
 * Javascript
 * Mysql
 * NPM
-* Inquirer
+* Inquirer npm package
 
 ## How to install:
 1. You first need to clone this repo onto your local computer
