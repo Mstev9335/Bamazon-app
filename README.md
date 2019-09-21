@@ -26,7 +26,7 @@
 ```javascript
 $ npm install
 ```
-3. You can then run the app by typing the following command into the terminal:
+3. You can then run the program by typing the following command into the terminal:
 ```javascript
 $ node bamazonCustomer.js
 ```
