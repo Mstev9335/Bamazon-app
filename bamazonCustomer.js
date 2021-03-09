@@ -18,7 +18,7 @@ var connection = mysql.createConnection({
 connection.connect(function (err) {
   if (err) throw err
   console.log("connected");
- order();
+  order();
 });
 
 function order() {
@@ -73,7 +73,7 @@ function completeTransaction(id, amount) {
       console.log("new stock: " + newStock);
       updateStock(newStock, itemId);
     }
-    else{
+    else {
       console.log("Insufficient quantity of " + res[0].product_name + ".  Order cancelled");
       console.log("----------------");
       console.log("\n");
